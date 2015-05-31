@@ -4,7 +4,7 @@
 			{% if page.category == 'broken_page' %}
 			<p>404 - This does not appear to be a valid link. Are you looking for any of the projects below?</p>
             {% else %}
-			<p><img src="https://kiv.nia.or.kr/images/front/img_main01.jpg"></p>
+			<p><img src="https://kiv.nia.or.kr/images/front/img_main01.jpg" width="200" height="50"></p>
 			{% endif %}
 		</div>
 	</div>
@@ -21,6 +21,10 @@
 					   	</div>
 					</a>
 				</figure>
+				<header>
+					<h4><a href="{{post.url}}">{{post.title_long}}</a></h4>
+					<div class='about_projects'><a href="{{post.url}}">{{post.subtitle}}</a></div>
+				</header>
 				
 			</article>
 		{% endfor %}
